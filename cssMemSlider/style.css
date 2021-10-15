@@ -22,7 +22,7 @@ body{
 
  img{
    width: 55rem;
-     height: 600px;
+   height: 32rem;
      border-radius: 2%;
  }
  #slides {
@@ -71,7 +71,7 @@ body{
  #text {
    width: 20%;
    margin-left: 20px;
-   background: #fff;
+   
    position: relative;
    z-index: 1;
 }
@@ -101,7 +101,7 @@ body{
    color: rgb(255, 255, 255);
 }
 #text .slide-text {
-   background: #1e1949c7;
+   
    width: 25%;
    float:left;
    display: flex;
@@ -138,6 +138,25 @@ body{
 #slide4:checked ~ #dots label:nth-child(4) {
    background: rgb(0, 0, 0);
 }
+@media screen and (min-width: 1900px){
+   img {
+      width: 70rem;
+      height: 35rem;
+   }
+   #dots {
+      margin: 20px 50px 0 0;
+      text-align: end;
+  }
+  #text .slide-text {
+  
+   justify-content: flex-start;
+}
+#text {
+   margin-left: 60px;
+}
+}
+
+
 @media screen and (max-width: 900px) {
    #slide1:checked ~ #controls label:nth-child(2),
    #slide2:checked ~ #controls label:nth-child(3),
@@ -157,6 +176,7 @@ body{
 @media screen and (max-width: 380px){
    #slider {
       width: 100vw;  
+      margin: 30px auto;
   }
   #slides{
    max-width: calc(100% - 90px);
@@ -169,5 +189,15 @@ body{
 #dots {
    margin: 15px 15px 0 0;
    text-align: center;
+}
+#dots label {
+   width: 8px;
+   height: 8px;
+}
+#text {
+   margin-top: 25px;
+   width: 100%;
+   margin-left: 0;
+   background: none;
 }
 }
