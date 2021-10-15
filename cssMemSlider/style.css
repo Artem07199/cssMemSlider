@@ -173,6 +173,34 @@ body{
       margin: 0 auto;
    }
 }
+@media screen and (max-width: 650px){
+   #slider {
+      width: 100vw;  
+      margin: 30px auto;
+  }
+  #slides{
+   max-width: calc(100% - 90px);
+   margin: 0 auto;
+  }
+  img {
+   width: 75vw;
+   height: 300px;
+}
+#dots {
+   margin: 15px 15px 0 0;
+   text-align: center;
+}
+#dots label {
+   width: 8px;
+   height: 8px;
+}
+#text {
+   margin-top: 25px;
+   width: 100%;
+   margin-left: 0;
+   background: none;
+}
+}
 @media screen and (max-width: 380px){
    #slider {
       width: 100vw;  
