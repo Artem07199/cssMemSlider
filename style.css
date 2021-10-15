@@ -1,5 +1,17 @@
+
 .container{
     margin: 0 auto;
-    width: 1000px;
-    background-color: blue;
+    width: 80vw;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+.images{
+    
+}
+.image{
+    min-width: 80em;
+    height: 650px;
+    border: 2px solid black;
+    display: flex;
 }
